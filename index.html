@@ -59,6 +59,66 @@
           </svg>
         </button>
       </div>
+      <div class="mob-menu is-open">
+        <div class="nav-wrapper">
+          <button class="mob-close-btn" type="button">
+            <svg class="icon-close" width="8" height="8">
+              <use href="./images/icons.svg#close-btn"></use>
+            </svg>
+          </button>
+          <ul class="mob-nav-list">
+            <li class="mob-nav-item">Studio</li>
+            <li class="mob-nav-item">Portfolio</li>
+            <li class="mob-nav-item">Contacts</li>
+          </ul>
+        </div>
+        <div class="contact-wrapper">
+          <ul class="mob-contact-list">
+            <li>
+              <a class="mob-contact-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="mob-contact-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-icon-list">
+            <li class="soc-icons-item">
+              <a href="" class="soc-icons-link">
+                <svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="soc-icons-item">
+              <a href="" class="soc-icons-link">
+                <svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="soc-icons-item">
+              <a href="" class="soc-icons-link">
+                <svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-icons-item">
+              <a href="" class="soc-icons-link">
+                <svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -147,6 +207,7 @@
           <ul class="team-employers-list">
             <li class="team-list-item">
               <img
+                srcset="./images/mark.jpg 1x, ./images/mark-2x.jpg 2x"
                 class="team-list-item-image"
                 src="./images/mark.jpg"
                 alt="Mark"
@@ -192,6 +253,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x"
                 class="team-list-item-image"
                 src="./images/tom.jpg"
                 alt="Tom"
@@ -237,6 +299,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/camila.jpg 1x, ./images/camila-2x.jpg 2x"
                 class="team-list-item-image"
                 src="./images/camila.jpg"
                 alt="Camila"
@@ -282,6 +345,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/daniel.jpg 1x, ./images/daniel-2x.jpg 2x"
                 class="team-list-item-image"
                 src="./images/daniel.jpg"
                 alt="Daniel"
@@ -515,9 +579,13 @@
                     "
                     media="(min-width: 768px)"
                   />
-                  <source srcset=" ./images/screen_illustrations-mob-1x.jpg 1x,
-                  ./images/screen_illustrations-mob-2x.jpg 2x "
-                  media="(max-width: 767px)" />
+                  <source
+                    srcset="
+                      ./images/screen_illustrations-mob-1x.jpg 1x,
+                      ./images/screen_illustrations-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                   <img
                     class="portfolio-item-image"
                     src="./images/screen_illustrations.jpg"
@@ -581,7 +649,7 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-content">
           <a class="footer-logo" href="./index.html"
@@ -648,8 +716,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
-    <!-- <div class="backdrop ">
+    </footer>
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="icon-close" width="8" height="8">
@@ -715,27 +783,27 @@
           </div>
 
           <div class="policy-wrap">
-          	<input
-	            type="checkbox"
-	            class="policy-checkbox visually-hidden"
-	            name="user-privacy"
-	            id="user-privacy"
-	            value="true"
-	          />
-	          <label for="user-privacy" class="check-text">
-	            <span class="checkbox-visible">
-	              <svg class="check-icon" width="10" height="8">
-	                <use href="./images/icons.svg#icon-check"></use>
-	              </svg>
-	            </span>
-	            I accept the terms and conditions of the
-	            <a href="" class="privacy-policy-link">Privacy Policy</a>
-	          </label>
+            <input
+              type="checkbox"
+              class="policy-checkbox visually-hidden"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label for="user-privacy" class="check-text">
+              <span class="checkbox-visible">
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="privacy-policy-link">Privacy Policy</a>
+            </label>
           </div>
 
           <button class="modal-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
